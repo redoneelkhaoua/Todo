@@ -13,12 +13,9 @@ public static class ServiceCollectionExtensions
     {
         services.AddTransient<IRepository, TasksRepository>();
         // todo une connection par request => open à reception de request / fermeture une fois une reponse est donnée
-        services.AddSingleton(new OracleConnection("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)));User Id=red;Password=redd;"));
+        services.AddSingleton(new OracleConnection(
+            "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)));User Id=red;Password=redd;"));
         services.AddTransient<IService, TasksService>();
         return services;
     }
-
-    
 }
-
-

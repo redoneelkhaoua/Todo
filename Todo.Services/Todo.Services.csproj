@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Todo.Repository.Abstractions\Todo.Repository.Abstractions.csproj" />
-      <ProjectReference Include="..\Todo.Services.Abstractions\Todo.Services.Abstractions.csproj" />
+        <ProjectReference Include="..\Todo.Repository.Abstractions\Todo.Repository.Abstractions.csproj"/>
+        <ProjectReference Include="..\Todo.Services.Abstractions\Todo.Services.Abstractions.csproj"/>
     </ItemGroup>
 
 </Project>
