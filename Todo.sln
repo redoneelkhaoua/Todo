@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Services", "Todo.Services\Todo.Services.csproj", "{39873847-F2DB-4ABD-93F8-A4B143907CA5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Repository", "Todo.Repository\Todo.Repository.csproj", "{66041585-9696-4320-BF79-1BF6B7E1C27F}"
@@ -20,6 +21,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Services.Abstractions", "Todo.Services.Abstractions\Todo.Services.Abstractions.csproj", "{3AFFBC0A-7221-450E-9837-0EE2BD5960CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Api", "Todo.Api\Todo.Api.csproj", "{E20B39A0-7D84-4449-A48E-433EAFC8793E}"
+=======
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -17,7 +17,6 @@ namespace Todo.Repository.Oracle
         {
             _oracleConnection.Open();
             OracleDataAdapter oracleDataAdapter = new OracleDataAdapter();
-            OracleCommand oracleCommand = new OracleCommand("delete from tasks where id=" + id, _oracleConnection);
             oracleDataAdapter.DeleteCommand = new OracleCommand("delete from tasks where id=" + id, _oracleConnection);
             oracleDataAdapter.DeleteCommand.ExecuteNonQuery();
             _oracleConnection.Close();
