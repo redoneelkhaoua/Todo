@@ -65,14 +65,15 @@ namespace todoo.Service
             {
                 throw new Exception("erreur");
             }
-            else if (tasks.statue != "not yet" || tasks.statue != "done")
+            else if (tasks.statue.ToLower() == "not yet" || tasks.statue.ToLower() == "done")
             {
-                throw new Exception("erreur");
+                _repository.Put(tasks);
 
             }
             else
             {
-                _repository.Post(tasks);
+                throw new Exception("erreur");
+
 
             }
         }

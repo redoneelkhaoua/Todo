@@ -20,7 +20,6 @@ namespace todoo.Repository
         {
             _oracleConnection.Open();
             OracleDataAdapter oracleDataAdapter = new OracleDataAdapter();
-            OracleCommand oracleCommand = new OracleCommand("delete from tasks where id=" + id, _oracleConnection);
             oracleDataAdapter.DeleteCommand = new OracleCommand("delete from tasks where id=" + id, _oracleConnection);
             oracleDataAdapter.DeleteCommand.ExecuteNonQuery();
             _oracleConnection.Close();
@@ -76,7 +75,6 @@ namespace todoo.Repository
         {
             _oracleConnection.Open();
             OracleDataAdapter oracleDataAdapter = new OracleDataAdapter();
-            OracleCommand oracleCommand = new OracleCommand("update tasks set name='" + tasks.statue + "',details='" + tasks.details + "'where id=" + tasks.id, _oracleConnection);
             oracleDataAdapter.UpdateCommand = new OracleCommand("update tasks set name='" + tasks.statue + "',details='" + tasks.details + "'where id=" + tasks.id, _oracleConnection);
             oracleDataAdapter.UpdateCommand.ExecuteNonQuery();
             _oracleConnection.Close();
